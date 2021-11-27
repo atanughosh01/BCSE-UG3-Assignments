@@ -1,0 +1,17 @@
+inferno%Find user%Sat 11 Sep 14:14:27 IST 2021
+inferno%%Sat 11 Sep 14:14:34 IST 2021
+inferno%%Sat 11 Sep 14:14:38 IST 2021
+inferno%Find user%Sat 11 Sep 14:14:52 IST 2021
+inferno%Find user%Sat 11 Sep 14:15:03 IST 2021
+inferno%Find user%Sat 11 Sep 14:15:17 IST 2021
+inferno%List large files%Sat 11 Sep 14:15:26 IST 2021
+inferno%Exit%Sat 11 Sep 14:16:42 IST 2021
+inferno%Find user%Saturday 11 September 2021 02:17:54 PM IST
+inferno%Find user%Saturday 11 September 2021 02:18:00 PM IST
+inferno%Find user%Saturday 11 September 2021 02:18:06 PM IST
+inferno%List large files%Saturday 11 September 2021 02:18:11 PM IST
+inferno%List large files%Saturday 11 September 2021 02:18:19 PM IST
+inferno%Disk usage%Saturday 11 September 2021 02:18:35 PM IST
+inferno%View log file%Saturday 11 September 2021 02:18:46 PM IST
+inferno%View log file%Saturday 11 September 2021 02:18:50 PM IST
+inferno%Exit%Saturday 11 September 2021 02:18:53 PM IST

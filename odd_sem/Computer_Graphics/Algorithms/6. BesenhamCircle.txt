@@ -1,0 +1,45 @@
+void MainWindow::on_bresenhamMidpointCircle_clicked()
+{
+    clock_t tStart = clock();
+    double tPoint = 0.0;
+
+    int r = ui->radiusspinbox->value();
+    p1.setX(ui->frame->x);
+    p1.setY(ui->frame->y);
+    int x0 = p1.x()/gridsize;
+    int y0 = p1.y()/gridsize;
+    x0 = x0*gridsize + gridsize/2;
+    y0 = y0*gridsize + gridsize/2;
+    int x = 0, y = r*gridsize, p = (3 - 2*r)*gridsize;
+
+    while(y >= x) {
+
+        clock_t t1 = clock();
+
+        point(x0 - x, y0 - y, 255, 255, 102);
+        point(x0 + x, y0 - y, 204, 255, 153);
+        point(x0 - x, y0 + y, 255, 153, 51);
+        point(x0 + x, y0 + y, 255, 51, 51);
+        point(x0 - y, y0 - x, 178, 102, 255);
+        point(x0 + y, y0 - x, 0, 128, 255);
+        point(x0 - y, y0 + x, 102, 0, 204);
+        point(x0 + y, y0 + x, 255, 204, 204);
+
+        delay();
+
+        clock_t t2 = clock();
+
+        x += gridsize;
+        if(p < 0) {
+            p += 4*x + 6;
+        } else {
+            p += 4*(x-y) + 10;
+            y -= gridsize;
+        }
+        tPoint += (t2-t1);
+    }
+
+    clock_t tEnd = clock();
+    double tBresenhamCircle = (tEnd - tStart) - tPoint;
+    ui->time_elapsed_circle->setText(QString::number(tBresenhamCircle*1000/CLOCKS_PER_SEC));
+}

@@ -1,0 +1,22 @@
+// Reflection Algorithm
+void MainWindow::on_reflection_clicked()
+{
+    int i,len=vertex_list.size();
+
+    double dx=p1.x()-p2.x();
+    double dy=p1.y()-p2.y();
+
+    double a=-dy;
+    double b=dx;
+    double c=p1.x()*dy-p1.y()*dx;
+
+    for(i=0;i<len;i++)
+    {
+        int x1=vertex_list[i].first;
+        int y1=vertex_list[i].second;
+
+        vertex_list[i].first=(int)((double)x1-(double)(2*a*(a*x1+b*y1+c))/(double)((a*a+b*b)));
+        vertex_list[i].second=(int)((double)y1-(double)(2*b*(a*x1+b*y1+c))/(double)((a*a+b*b)));
+    }
+    poly_draw(vertex_list,255,255,255);
+}

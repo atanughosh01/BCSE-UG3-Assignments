@@ -1,0 +1,58 @@
+
+// Liang-Barsky Line Clipping Algorithm
+bool MainWindow :: testandsetliangbarsky(float p, float q, float* u1, float* u2)
+{
+    float r ;
+    bool retval = true;
+    if(p < 0){
+        r = q/p;
+        if(r>*u2)retval = false;
+        else if(r>*u1) *u1 = r;
+    }else if(p>0){
+            r = q/p;
+            if(r<*u1)retval=false;
+            else if(r<*u2) *u2 = r;
+    }else if(q<0) retval = false;
+    return retval;
+}
+
+bool MainWindow :: liangBarskyClip(QPair<int, int>* p1, QPair<int, int>* p2, QPair<int, int> min, QPair<int, int> max)
+{
+    float u1 = 0.0, u2 = 1.0, dx = p2->first - p1->first, dy = p2->second - p1->second;
+    if(testandsetliangbarsky(-dx,p1->first-min.first,&u1,&u2))
+        if(testandsetliangbarsky(dx,max.first-p1->first,&u1,&u2))
+            if(testandsetliangbarsky(-dy,p1->second-min.second,&u1,&u2))
+                if(testandsetliangbarsky(dy,max.second-p1->second,&u1,&u2)){
+                    if(u2<1){
+                        p2->first = p1->first + u2*dx;
+                        p2->second = p1->second + u2*dy;
+                    }
+                    if(u1>0){
+                        p1->first += u1*dx;
+                        p1->second += u1*dy;
+                    }
+                    return true;
+
+                }
+    return false;
+}
+
+void MainWindow :: on_liangBarsky_clicked()
+{
+    DDAline(0,0,0);
+    QPair<int, int> point1, point2, minP, maxP;
+    point1 = QPair<int,int>(p1.x(), p1.y());
+    point2 = QPair<int,int>(p2.x(), p2.y());
+    minP = QPair<int,int>(cp1.x(), cp1.y());
+    maxP = QPair<int,int>(cp2.x(), cp2.y());
+
+    if (liangBarskyClip(&point1, &point2, minP, maxP))
+    {
+        p1.setX(point1.first);
+        p1.setY(point1.second);
+        p2.setX(point2.first);
+        p2.setY(point2.second);
+        DDAline(255,255,0);
+    }
+    draw_Window();
+}

@@ -1,0 +1,60 @@
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+
+MSG1 DB "ENTER TWO NUMBERS",13,10,"$"
+NUM1 DB ?
+NUM2 DB ?
+MSG2 DB 13,10,"SECOND NUMBER IS SMALLER OK..$"
+MSG3 DB 13,10,"SECOND NUMBER IS GREATER FAILED VALIDATION ..$"
+IN1 DB 13,10,"ENTER FIRST NUMBER: $"
+IN2 DB 13,10,"ENTER SECOND NUMBER: $"
+
+.CODE
+
+MAIN PROC
+        MOV AX,@DATA
+        MOV DS,AX
+        LEA DX,MSG1
+        MOV AH,9
+        INT 21H
+
+        ; FIRST NUMBER
+        MOV AH,9
+        LEA DX, IN1
+        INT 21H ;PROMPT
+        MOV AH,1
+        INT 21H  ;INPUT
+        MOV NUM1,AL
+
+        ; SECOND NUMBER
+        MOV AH,9
+        LEA DX, IN2
+        INT 21H ;PROMPT
+        MOV AH,1
+        INT 21H ;INPUT
+        MOV NUM2, AL
+
+
+        MOV AL, NUM1
+        CMP AL, NUM2
+        JGE OK ; VALIDATION OK
+        MOV AH,9
+        LEA DX,MSG3
+        INT 21H
+        JMP EXIT 
+
+
+OK:
+        MOV AH,9
+        LEA DX, MSG2
+        INT 21H
+        ;EXIT
+EXIT:
+        MOV AH,4CH
+        INT 21H
+
+
+MAIN ENDP
+END MAIN
