@@ -18,6 +18,7 @@ public:
 protected:
     void mouseMoveEvent(QMouseEvent *ev);
     void mousePressEvent(QMouseEvent *ev);
+
 signals:
     void sendMousePosition(QPoint&);
     void Mouse_Pos();
