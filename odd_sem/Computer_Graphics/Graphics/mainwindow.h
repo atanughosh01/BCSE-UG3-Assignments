@@ -84,14 +84,15 @@ private slots:
     void WAclipCacher(int x1, int y1, int x2, int y2);
     int findCorrPos(int sign, bool xy, std::vector<QPair<QPoint, QString>> &vec, QPair<QPoint, QString> intPoint);
     int findIntersection(bool flag, QPair<QPoint, QString> intPoint);
-    // void on_weilerAtherton_clicked();
 
-//    QPoint intersect(int x1, int y1, int x2, int y2,int x3, int y3, int x4, int y4);
-//    std::vector<QPoint> poly_vertex_list;
-//    std::vector<QPair<QPoint,QString>> clipped_poly_list;
-//    std::vector<QPair<QPoint,QString>> clipping_poly_list;
-//    std::list<std::vector<QPoint>> poly_list;
-
+    /*
+    void on_weilerAtherton_clicked();
+    QPoint intersect(int x1, int y1, int x2, int y2,int x3, int y3, int x4, int y4);
+    std::vector<QPoint> poly_vertex_list;
+    std::vector<QPair<QPoint,QString>> clipped_poly_list;
+    std::vector<QPair<QPoint,QString>> clipping_poly_list;
+    std::list<std::vector<QPoint>> poly_list;
+    */
 
     /*
     void on_setbezpoint_clicked();
