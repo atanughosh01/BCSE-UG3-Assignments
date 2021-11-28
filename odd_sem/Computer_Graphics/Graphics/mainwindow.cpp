@@ -162,12 +162,12 @@ void MainWindow::delay() {
 
 
 // DDA (Digital Differential Analyzer) line drawing algorithm
-void MainWindow::on_DDALine_clicked()
-{
-    DDAline(255,255,0);
-}
 
 void MainWindow::DDAline(int r, int g, int b) {
+
+    clock_t tStart = clock();
+    double tPoint = 0.0;
+
     double x1 = p1.x()/gridsize;
     double y1 = p1.y()/gridsize;
     double x2 = p2.x()/gridsize;
@@ -188,10 +188,27 @@ void MainWindow::DDAline(int r, int g, int b) {
     double x = x1*gridsize + gridsize/2;
     double y = y1*gridsize + gridsize/2;
     for(int i=0;i<=step;i++) {
+
+        clock_t t1 = clock();
+        delay();
         point(x,y,r,g,b);
+        clock_t t2 = clock();
+
         x += xinc * gridsize;
         y += yinc * gridsize;
+
+        tPoint += (t2-t1);
     }
+
+    clock_t tEnd = clock();
+    double tDDA = (tEnd - tStart) - tPoint;
+
+    ui->time_elapsed_line->setText(QString::number(tDDA*1000/CLOCKS_PER_SEC));
+}
+
+void MainWindow::on_DDALine_clicked()
+{
+    DDAline(255,255,0);
 }
 
 
@@ -1495,6 +1512,8 @@ void MainWindow::on_sutherlandHodgeman_clicked()
 {
     suthHodgClip();
 }
+
+
 
 
 
