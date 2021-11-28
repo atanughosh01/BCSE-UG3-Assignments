@@ -1002,11 +1002,24 @@ color: black;</string>
         <x>10</x>
         <y>30</y>
         <width>131</width>
-        <height>51</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="text">
        <string>SutherlandHodgeman</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="weilerAtherton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>WeilerAtherton</string>
       </property>
      </widget>
     </widget>
@@ -1049,19 +1062,6 @@ color: black;</string>
       </property>
      </widget>
     </widget>
-   </widget>
-   <widget class="QPushButton" name="weilerAtherton">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>740</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>WeilerAtherton</string>
-    </property>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
