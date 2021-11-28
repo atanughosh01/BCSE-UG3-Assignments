@@ -1,4 +1,5 @@
 #include "my_label.h"
+
 my_label::my_label(QWidget *parent):QLabel(parent)
 {
     this->setMouseTracking(true);
@@ -17,8 +18,10 @@ void my_label::mouseMoveEvent(QMouseEvent *ev)
 void my_label::mousePressEvent(QMouseEvent *ev)
 {
     if(ev->button()==Qt::LeftButton){
-        this->x=ev->x();
-        this->y=ev->y();
+//        this->x=ev->x();
+//        this->y=ev->y();
+        this->x = ev->position().x();
+        this->y = ev->position().y();
         emit Mouse_Pos();
     }
 }
