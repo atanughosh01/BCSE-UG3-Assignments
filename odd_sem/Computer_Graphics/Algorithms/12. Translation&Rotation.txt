@@ -54,7 +54,7 @@ void MainWindow::on_translation_clicked()
     poly_draw(vertex_list,255, 249, 182);
 }
 
-// Rotating Algorithm
+// Rotation Algorithm
 void MainWindow::on_rotation_clicked()
 {
     int angle = ui->anglespinbox->value();
