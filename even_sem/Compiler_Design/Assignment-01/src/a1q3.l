@@ -6,7 +6,7 @@
 
 %%
 
-[aeiouAEIOU][a-zA-z0-9]* {
+[aeiouAEIOU][a-zA-Z0-9]* {
     cnt_vowels++;
 }
 

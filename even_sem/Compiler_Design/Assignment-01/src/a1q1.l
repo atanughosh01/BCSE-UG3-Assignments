@@ -19,6 +19,9 @@ int cnt_lines=0, cnt_words=0, cnt_chars=0;
 }
 %%
 
+/*A lex library routine that can be redefined is yywrap(), which is called whenever the scanner reaches
+ the end of file. If yywrap() returns 1, the scanner continues with normal wrapup on the end of input. */
+
 
 int yywrap(void) {
     return 1;
