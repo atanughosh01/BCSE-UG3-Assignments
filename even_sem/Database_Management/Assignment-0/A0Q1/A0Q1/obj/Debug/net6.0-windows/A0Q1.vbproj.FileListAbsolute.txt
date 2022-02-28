@@ -1,0 +1,17 @@
+C:\Users\2001a\Music\A0Q1\A0Q1\bin\Debug\net6.0-windows\A0Q1.exe
+C:\Users\2001a\Music\A0Q1\A0Q1\bin\Debug\net6.0-windows\A0Q1.deps.json
+C:\Users\2001a\Music\A0Q1\A0Q1\bin\Debug\net6.0-windows\A0Q1.runtimeconfig.json
+C:\Users\2001a\Music\A0Q1\A0Q1\bin\Debug\net6.0-windows\A0Q1.dll
+C:\Users\2001a\Music\A0Q1\A0Q1\bin\Debug\net6.0-windows\A0Q1.pdb
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.vbproj.AssemblyReference.cache
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.Form1.resources
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.vbproj.GenerateResource.cache
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.AssemblyInfoInputs.cache
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.AssemblyInfo.vb
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.vbproj.CoreCompileInputs.cache
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.dll
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\refint\A0Q1.dll
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.pdb
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\A0Q1.genruntimeconfig.cache
+C:\Users\2001a\Music\A0Q1\A0Q1\obj\Debug\net6.0-windows\ref\A0Q1.dll
