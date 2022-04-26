@@ -1,0 +1,21 @@
+1. Implement the following uninformed search techniques 
+    Breadth first search 
+    Depth first search
+    Depth limited search 
+    Iterative depending search
+    IBS
+    For each of these search techniques output both order and path
+    Work these for 
+    Tree
+    Graph
+    Any puzzle problem
+
+2. Depth first greedy search A*
+
+3. Implement hill climbing algorithm for function optimization 
+
+4. Simulated anealing algorithm for function optimization 
+
+5. Genetic algorithm for function optimization 
+
+6. Comparative performance analysis for HC, SA, GA
