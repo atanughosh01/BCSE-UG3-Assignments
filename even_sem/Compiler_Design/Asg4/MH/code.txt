@@ -1,0 +1,9 @@
+int i = 0;
+while (i<5) [
+    int j=0;
+    if(j%2==0) (
+        printf("%d", &j);
+    ]
+    j++;
+    i++;
+}

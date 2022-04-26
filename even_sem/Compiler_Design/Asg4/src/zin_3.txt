@@ -1,0 +1,7 @@
+5
+s->abc
+A->Aa|Ad|b
+B->Bb|c
+C->Cc|g
+
+S->S*a|b
