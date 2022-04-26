@@ -10,11 +10,10 @@ Declaration statements: identifiers are declared in declaration statements as ba
 
 Condition constructs: if, then, else. Relational operators used in the if statement are < (less than), > (greater than), == (equal) and != (not equal).
 
-Example: if(a<10) then
-
-a=a*a;
-
-else a=a/2;
+Example:    if(a<10) then
+                a = a*a;
+            else
+                a = a/2;
 
 Nested statements are supported. There may be if statement without else statement.
 

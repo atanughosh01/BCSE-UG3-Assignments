@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-
 #include "../util/filereadwrite.h"
-
 using namespace std;
 
 FileReadWrite frw;
