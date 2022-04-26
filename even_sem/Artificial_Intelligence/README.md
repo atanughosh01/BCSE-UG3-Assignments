@@ -6,8 +6,8 @@
     * Depth limited search 
     * Iterative deepening search
     * Iterative broadening search\
-For each of these search techniques output both order and path
-Work these for 
+For each of these search techniques output both order and path.\
+Work these for-
         - Tree
         - Graph
         - Any puzzle problem
