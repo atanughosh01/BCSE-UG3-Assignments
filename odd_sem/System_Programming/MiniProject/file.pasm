@@ -1,0 +1,7 @@
+MOV DX string
+MOV AX 08FFH
+ADD AX 0001H
+INT 21H
+MOV AX 4C00H
+INT 21H
+string: DB "Hello$"
